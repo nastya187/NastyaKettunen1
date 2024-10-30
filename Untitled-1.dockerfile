@@ -1,0 +1,29 @@
+git clone <https://github.com/nastya187/NastyaKettunen1> 
+   cd <NastyaKettunen1> 
+   git checkout -b develop 
+      git add . 
+         git commit -m "Добавлены файлы отчетов из предыдущей практики" 
+            git push origin develop 
+               git pull origin develop 
+                  git checkout -b feature/delnull 
+                     git add . 
+   git commit -m "Добавлена функциональность для обработки деления на ноль" 
+   git push origin feature/delnull 
+      git checkout develop 
+   git checkout -b feature/add-logging 
+      git add . 
+   git commit -m "Добавлено логирование" 
+   git push origin feature/add-logging 
+      git checkout develop 
+         git merge feature/delnull 
+            git add <путь_к_файлам> 
+               git commit -m "Слияние ветки feature/delnull в develop" 
+                  git checkout master 
+                     git merge develop 
+                        git push origin master 
+                           git checkout -b feature/another-update 
+                              git add . 
+   git commit -m "Произвольные изменения в новой ветке" 
+      git log 
+         git revert <идентификатор_коммита> 
+            git push origin feature/another-update
