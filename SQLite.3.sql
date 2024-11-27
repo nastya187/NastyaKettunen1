@@ -1,0 +1,62 @@
+   SELECT 
+    f.number_flights AS flight_number,
+    a.model AS airplane_model,
+    f.departure_date AS departure_date,
+    f.arrival_date AS arrival_date
+FROM 
+    Flights f
+JOIN 
+
+    Airplane a ON f.airplane_id = a.id;
+    SELECT 
+    pas.name AS passenger_name,
+    pas.surname AS passenger_surname,
+    t.price AS ticket_price,
+    t.status_ticket AS ticket_status
+FROM 
+    Passengers pas
+JOIN 
+    Tickets t ON pas.id = t.passanger_id;
+    
+    SELECT 
+    f.number_flights AS flight_number,
+    a.model AS airplane_model,
+    air.name AS airline_name,
+    f.departure_date AS departure_date
+FROM 
+    Flights f
+JOIN 
+    Airplane a ON f.airplane_id = a.id
+JOIN 
+    Airlines air ON a.airlines_id = air.id;
+    
+    SELECT 
+    p.name AS employee_name,
+    p.surname AS employee_surname,
+    s.work_experience AS work_experience,
+    s.qualification AS qualification
+FROM 
+    personnel p
+JOIN 
+    Salary s ON p.id = s.id_personnel;
+
+SELECT 
+    r.data AS report_date,
+    r.type_reports AS report_type,
+    air.name AS airline_name
+FROM 
+    Reports r
+JOIN 
+    Airlines air ON r.airlines_id = air.id;
+    
+    SELECT 
+    sc.data AS check_date,
+    sc.result AS check_result,
+    f.number_flights AS flight_number
+FROM 
+    security_checks sc
+JOIN 
+    Flights f ON sc.id_flights = f.id;
+
+
+
