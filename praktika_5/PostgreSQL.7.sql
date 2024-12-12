@@ -1,2 +1,2 @@
-   SELECT number_to_words(123);
+   SELECT number_to_words(741);
    
