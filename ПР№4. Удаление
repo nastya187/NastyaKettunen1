@@ -33,7 +33,7 @@
     DELETE FROM Employees
    WHERE id IN (
        SELECT id FROM Employees
-       WHERE termination_date < DATE('2020-01-01') 
+       WHERE termination_date < DATE('2019-01-01') 
        ORDER BY id
        LIMIT 3
    );
