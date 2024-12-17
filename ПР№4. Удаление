@@ -10,6 +10,12 @@ WHERE id_personnel = 3;
 DELETE FROM Flights
 WHERE number_flights = 10;
 
+DELETE FROM Salary 
+WHERE employee_id IN (
+    SELECT id FROM Employees 
+    WHERE termination_date < NOW() - INTERVAL '6 months'
+);
+
 
 
 
