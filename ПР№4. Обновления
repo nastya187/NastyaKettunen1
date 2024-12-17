@@ -14,7 +14,7 @@ WHERE id_personnel IN (
 ); 
 
 UPDATE Flights
-SET status_flight = 'Задержан', arrival_time = '20:00:00'
+SET status_flight = 'Задержан', arrival_time = '20:00'
 WHERE departure_date < DATE('now');
 
 UPDATE Flights
