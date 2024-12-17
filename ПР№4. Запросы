@@ -1,11 +1,3 @@
-   SELECT 
-    f.number_flights AS flight_number,
-    a.model AS airplane_model,
-    f.departure_date AS departure_date,
-    f.arrival_date AS arrival_date
-FROM 
-    Flights f
-JOIN 
 
     Airplane a ON f.airplane_id = a.id;
     SELECT 
