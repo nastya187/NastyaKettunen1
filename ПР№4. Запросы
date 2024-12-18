@@ -1,5 +1,5 @@
 
-    Airplane a ON f.airplane_id = a.id;
+  
     SELECT 
     pas.name AS passenger_name,
     pas.surname AS passenger_surname,
